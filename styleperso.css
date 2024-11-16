@@ -1,0 +1,487 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf') format('OpenType');
+  }
+
+@font-face {
+    font-family: 'Satoshi2';
+    src: url('../font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('OpenType');
+  }
+
+
+  
+
+
+body{
+    margin: 0 auto; /*Permet d'avoir aucune marge exterieur pour tout le contenu du site */
+    padding: 0px auto; /*Permet d'avoir aucune marge intèrieur pour tout le contenu du site */
+    /*Grâçe à ce padding et à ce margin le site prend tout la place de l'écran disponible sans avoir de parties blanches autour*/
+    font-family: 'Satoshi', sans-serif; /*Type de la police*/
+    color:black; /*Couleur du texye en noir*/
+}
+
+
+
+
+
+nav{
+    grid-area:nav;
+    display: flex; /*Permet d'aligner les éléments et/ou textes */
+    flex-wrap:wrap; /*Le texte ou les éléments s'empilent*/
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(146, 2, 2); /*Permet d'afficher une barre de couleur grise qui sépare la partie 'nav' à la partie 'section'et cette bare est positionnée en dessous du 'nav'*/
+    height: 100px; /*Hauteur de 150px*/
+    padding: 40px;
+
+}
+
+
+nav .accueil a {
+    text-decoration: none; /*Texte et/ou lien non souligné*/
+    color: white; /*Couleur du texte en blanc*/
+    font-family: 'Satoshi2', sans-serif; /*Type de police*/
+    font-size: 40px; /*Taille de la police utilisée*/
+}
+
+nav .onglet {
+    
+    margin-left: 100px; /*Marge extèrieur à gauche de 100px pour espacer la barre de naviagtion par rapport au titre'Thomas Latterner'*/
+} 
+
+nav .onglet a {
+    font-size: 26px; /*Taille de la police*/
+    text-decoration: none; /*Texte et/ou lien non souligné*/
+    color: white;
+    margin-right: 40px; /*Marge intèrieur à droite de 35px qui est situé entre chaque liens de navigation situés dans la partie 'nav'*/
+}
+
+nav .onglet a:hover {
+    color:  rgb(146, 2, 2) ;
+    border-bottom: 1px solid rgb(146, 2, 2);
+}
+
+nav .accueil a:hover {
+    color:  rgb(146, 2, 2);
+}
+
+
+section{
+    grid-area:sec;
+    display: block;/*permet d'emplier les éléments*/
+    padding: 30px; /*Mage intèrieur de 30px*/
+    border-radius: 10px; /*Permet d'arrondir les coints d'une image ou d'un block de texte*/
+}
+
+
+
+
+/*Partie section page Index*/
+
+section h4{
+    padding: 10%;
+    text-align: center; /*Texte aligné au centre de la partie 'section h4'*/
+    font-size: 45px; /*Taille de la police*/
+    font-family: 'Abel', sans-serif;
+}
+
+.fond{
+    background: url('../images/black-white-background.jpg'); /*Permet d'afficher une image en arrière plan*/
+    background-size: cover;
+    border-radius: 0px; /*Permet d'annuler les coints arrondis sur l'image*/
+
+}
+
+/*Fin partie section page Index*/
+
+
+
+
+
+
+
+
+/*Partie section page 1 */
+
+.colonnes{
+    display: flex; /*Permet d'aligner les éléments et/ou textes */
+    flex-wrap:wrap; /*le texte ou les éléments s'empilent*/
+    background-color: white; /*Couleur grise en arrière plan*/
+}
+
+.colonnes .presentation{
+    text-align: center; /*Texte aligné au cnetre*/
+    margin-right: 10px; /*Marge extèrieur à droite de 10px*/
+    padding: 30px; /*Marge intèrieur de 30px*/
+}
+
+.colonnes .presentation p{
+    font-size: 17px; /*Taille de la police*/
+}
+
+.colonnes .presentation img{
+    border: solid 2px rgb(146, 2, 2) ;
+    border-radius: 70px;
+}
+
+.colonnes .infos{
+    text-align: left; /*Texte aligné à gauche*/
+    margin-right: 20px; /*Marge extèrieur à droite de 20px*/
+    padding: 30px;/*Marge intèrieur de 30px*/
+    max-width: 800px; /*Définit une largeur maximum de 65Opx*/
+}
+
+.infos a {
+    text-decoration: none; /*Texte et/ou lien non souligné*/
+    color:  rgb(146, 2, 2); /*Couleur de texte en bleu*/
+}
+
+.presentation a {
+    text-decoration: none; /*Texte et/ou lien non souligné*/
+    color:  rgb(146, 2, 2); /*Couleur de texte en bleu*/
+}
+
+.ligne-verticale {
+    border-left: 2px solid black; /*Largeur de du trait*/
+    height: 780px; /*Hauteur du trait*/
+    margin: 10 60px; /* Marge extèrieur pour espacer la ligne par rapport au text*/
+    margin-bottom: 25px;
+    margin-top: 25px; /*Marge extérieur de 25px, grâçe à ce margin-top la ligne verticale ne touche pas le bord du 'section' en haut, il y a un petit espacement*/
+}
+
+/*Fin partie section page 1 */
+
+
+
+
+
+
+/*Partie section page 2 */
+
+.packet{ 
+    align-items: center;
+    justify-content: center; /* Situé au centre de la page par rapport à l'axe principal qui l'axe vertical ou des ordonnés*/
+    flex-direction: column; /* Texte et/ou éléments positionés en colonnes*/
+}
+.part{
+    display: flex; /*permet d'aligner les élément sur un même ligne*/
+    flex-wrap: wrap; /*si la résolution ne permet pas d'alugner les élément alors ils seront empilés */
+    margin-bottom: 50px; /*espacement entre les parts*/
+}
+
+.left{
+    padding: 20px; /*Marge intèrieur*/
+    flex: 0 0 48%; /*Les éléments dans left occupe 30% la partie section de la page*/
+    border-radius: 20px; /*Permet d'arrondir les coints d'une image ou d'un block de texte*/
+}
+
+.left a{
+    color:  rgb(146, 2, 2); /*Couleur du texte en rouge*/
+    text-decoration: none;
+}
+
+.left h2{
+    color:rgb(146, 2, 2);
+}
+
+.right{
+    flex: 0 0 48%; /*Les éléments dans left occupe 60% la partie section de la page*/ 
+}
+
+.right h2{
+    color:rgb(146, 2, 2);
+}
+
+
+.left img{
+    height: 300px; /*Hauteur de l'image*/
+    width: 400px; /*Largeur de l'image*/
+    margin-left: 20% ; /*Marge extèrieur et à gauche de 20px*/
+    border-radius: 10px; /*Permet d'arrondir les coints à 10px d'une image ou d'un block de texte*/
+}
+
+.right img{
+    height: 260px; /*Hauteur de l'image*/
+    width: 400px; /*Largeur de l'image*/
+    margin-left: 20% ; /*Marge extèrieur et à gauche de 20px*/
+    border-radius: 10px; /*Permet d'arrondir les coints à 10px d'une image ou d'un block de texte*/
+}
+
+.size img{
+    height: 320px; /*Hauteur de l'image définit à 300px*/
+}
+
+/*Fin partie page 2*/
+
+
+
+
+/*Partie css page 3*/
+
+.colonnes .block1 h2{
+    color:rgb(146, 2, 2);
+}
+
+
+.block1{
+    padding: 20px; /*Marge intèrieur de 20px*/
+    flex: 40%; /*Les éléments dans left occupe 50% la partie section de la page*/ 
+}
+
+.block2{
+    flex: 40%; /*Les éléments dans right occupe 50% la partie section de la page*/ 
+} 
+
+
+
+/*Fin partie de la page 3*/
+
+
+
+
+/*Partie section page 4 */
+
+.liens{
+    padding: 20px; /*Mage intèrieur de 30px*/
+    background-color: white; /*Couleur grise en arrière plan*/
+    border-radius: 20px; /*Permet d'arrondir les coints d'une image ou d'un block de texte*/
+}
+
+.liens p a {
+    color: rgb(146, 2, 2);
+    text-decoration: none;
+}
+
+/*Partie section page 4*/
+
+
+
+
+
+/*Partie footer situé en bas d'une page web*/
+
+footer{
+    grid-area:fo;
+    border-top: 5px solid rgb(146, 2, 2); /*Permet d'afficher une barre de couleur grise qui sépare la partie 'section' à la partie 'footer' et cette bare est positionnée au dessus du 'footer'*/
+    background-color: white; /*Couleur noir en arrière plan*/
+    color: black; /*Couleur du texte en blanc*/
+    padding-top: 40px; 
+}
+
+.footer-icons {
+    display: flex; /*Permet un alignement des élements et/ou textes */
+    justify-content: center;/*Permet de centrer les éléments par rapport à l'axe principal(l'axe des ordonnées)*/
+    align-items: center; /*Permet de centrer les éléments par rapport à l'axe secondaire(l'axe des abscisses)*/
+}
+
+.footer-icons a {
+    margin: 0 70px; /*Marge extèrieur entre chaques icones*/
+}
+
+.footer-icons a i {
+    font-size: 50px; /*Taille des icones (logo Gmail, Instagram et linkedin)*/
+    color: black; /*Couleur des icones (logo Gmail, Instagram et linkedin)*/
+}
+
+.footer-icons a img {
+    height: 50px; /*Hauteur de l'image Stillincontact*/
+    width: 90px; /*Largeur de l'image Stillincontact*/ 
+    border-radius: 5px;
+}
+
+
+footer p {
+    font-size: 15px; /*Taille de la police utilisée*/
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer a {
+    color: rgb(146, 2, 2);
+    text-decoration: none;
+}
+
+
+.footer-icons a i:hover {
+    color:  rgb(146, 2, 2);
+}
+
+
+/*Fin partie footer*/
+
+
+
+
+
+
+
+/*Partie responsive*/
+
+
+
+/*
+all = tout les types (screen / handheld / print / projection / tv)
+and = autre vérification ( and ou not)
+(max-width:650px) = si largeur maximal est de 650px alors...
+*/
+@media all and (max-width:650px){
+
+/*Dans cette partie de media queries il y a des marge qui peuvent être soit annulé ou réduite,
+des tailles d'écritures diminués et aussi des tailles d'images plis petites 
+pour permettre un bonne visualisation du site sur n'importe quels types d'écrna mobiles */
+
+    nav{
+        height: auto; /*Hauteur réglé automatiquement*/
+    }
+
+    nav .accueil{
+        text-align: center; /*Texte aligné au centre*/
+        margin-bottom: 30px; /*Marge extérieur en dessous du texte de 30px, il y un espacement de 30px entre 'Thomas Latterner et le menu de navigation*/
+        margin-top: 20px;/*Marge extérieur au dessus du texte de 20px*/
+    }
+    nav .onglet {
+        justify-content: center;
+        text-align: center; /*Texte aligné au centre*/      
+    
+    
+    }
+    nav .onglet a {
+        display: block; /*Permet de disposer les éléments et/ou textes les uns au dessous des autres sous formes de block*/
+        font-size: 17px;
+        margin-bottom: 15px; /*Marge extérieur de 20px au dessus de chaque liens de la barre de naviagtion */
+    }
+
+    section{
+        padding: 15px; /*Marge intèrieur de 15px*/
+    }
+
+
+
+    /*Parie section page Index*/
+
+    section h4{
+        text-align: center;
+        padding: 40px;
+        font-size: 30px; /*Taille de la police*/
+    }
+
+    /*Fin partie section page Index*/
+
+
+
+
+    /*Parie section page 1*/
+
+    .colonnes .presentation img{
+        height: 140px; /*Hauteur des images situé a droite dans la page 1*/
+        width: 120px; /*Largeur des images situé a droite dans la page 1*/
+    }
+
+    .ligne-verticale {
+        height: 0px; /*Hauteur annulé pour faire disparaitre le trait verticale*/
+        margin: 0px; /* Marge annuler entre le trait verticale et le texte*/
+    }
+
+    /*Fin de la partie page 1*/
+
+
+
+
+    /*Partie page 2*/
+
+    .part{
+        display: block;/*permet d'emplier les éléments*/
+    }
+
+    .left img{
+        margin-left: 0% ; /*Marge extèrieur et à gauche de 20px*/
+        align-items: center;
+    }
+
+    .right img{
+        height: 200px; /*Hauteur des images situé a droite dans la page 2*/
+        width: 300px; /*Largeur des images situé a droite dans la page 2*/
+
+    }
+
+    .size img{
+        height: 240px; /*Hauteur des images*/
+        width: 300px; /*Hauteur des images*/
+    }
+
+    /*Fin partie page 2*/
+
+
+
+
+    /*Partie css page 3*/
+
+    .colonnes{
+        display: block;/*permet d'emplier les éléments*/
+    }
+    .logo{
+        text-align: center; /*logo aligné au milieu de la page */
+    }
+
+    /*Fin partie page 3*/
+
+
+
+
+    /*Partie css page 4*/
+
+    .liens{
+        height: auto; /*Hauteur réglé automatiquement*/
+    }
+
+    /*Fin partie page 4*/
+
+
+
+    /*Partie footer*/
+
+    footer{
+        padding: 10px;
+    }
+    
+    .footer-icons a {
+        margin: 5%; 
+    }
+
+    .footer-icons a i {
+        font-size: 40px;
+    }
+
+    .footer-icons a img{
+        height: 35px; /*Hauteur des icones*/
+        width: 70px; /*Largeur des icones*/
+    }
+
+    footer p {
+        font-size: 12px; /*Taille de la police utilisée*/
+    }
+
+    .right img{
+        margin-top: 5px; /*marge à mettre pour le format mobile*/
+    }
+    /*Fin partie footer*/
+
+
+
+    #wrapper{
+            display: grid;
+            grid-template-columns: (1fr);
+            grid-auto-rows: minmax(50px, auto);
+            grid-row-gap:5px;
+            grid-template-areas:
+            "nav"
+            "sec"
+            "sec"
+            "fo";
+        }
+    
+}
+
+/*Fin de partie responsive*/
