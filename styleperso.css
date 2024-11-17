@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Satoshi';
-    src: url('../font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf') format('OpenType');
+    src: url('./Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf') format('OpenType');
   }
 
 @font-face {
     font-family: 'Satoshi2';
-    src: url('../font/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('OpenType');
+    src: url('./Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Bold.otf') format('OpenType');
   }
 
 
@@ -87,7 +87,7 @@ section h4{
 }
 
 .fond{
-    background: url('../images/black-white-background.jpg'); /*Permet d'afficher une image en arrière plan*/
+    background: url('./black-white-background.jpg'); /*Permet d'afficher une image en arrière plan*/
     background-size: cover;
     border-radius: 0px; /*Permet d'annuler les coints arrondis sur l'image*/
 
